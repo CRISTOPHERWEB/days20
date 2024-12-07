@@ -54,14 +54,14 @@ footer{
     color:white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 619px) {
     body {
         background-color: dimgray;
         font-size: 14px;
     }
 
     header{
-        max-width: 69%;
+        max-width: 74%;
     }
 
     nav a {
@@ -72,11 +72,11 @@ footer{
     section{
 
         font-size: 16px;
-        width: 63%;
+        width: 70%;
     }
 
     form, table, footer {
-        width: 68%;
+        width: 75%;
         padding: 0;
         margin: 10px 0;
     }footer{padding:2px;width: 72%;}
