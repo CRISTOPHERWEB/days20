@@ -28,17 +28,16 @@
         </section>
     </main>
     <!--Esta es un pequeño formulario con nombre, email, mensaje-->
-    <form action="/submit" method="POST">
+    <form id="formulario">
         <label for="name">Nombre:</label>
         <input type="text" name="name" id="name" placeholder="Tu nombre" required>
 
         <label for="email">Correo:</label>
-        <input type="email" name="email" id="email" placeholder="Tu correo" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea name="mensaje" id="mensaje" rows="4" placeholder="Tu mensaje"></textarea>
+        <input type="email" name="email" id="email" placeholder="Tu correo">
 
         <button type="submit">Enviar</button>
+
+        <p id="mensaje"></p>
     </form>
     <!--Una tabla mostrando algunos productos en stock o agotados-->
     <table border="1">
@@ -63,9 +62,25 @@
         </tbody>
 
     </table>
+
+    <!--Modificacion de textos usando JS-->
+    <section>
+        <button type="submit" id="cambiarTxt">Hazme click</button>
+        <p id="cambioTxt"> Este texto será modificado</p>
+    </section>
+
+    <section>
+      <button type="submit" id="abrir/ocultar">Hazme click</button>
+      <section id="proyects">
+        <h1>Mis proyectos:</h1>
+        <p>He trabajado en sitios responsivos y funcionales.</p>
+      </section>
+  </section>
+
     <!--pie de pagina-->
     <footer>
         <p>© 2024 - Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

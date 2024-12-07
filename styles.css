@@ -47,6 +47,16 @@ table{
     text-align: center;
     padding: 10px;
 }
+
+button{
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 1px #ddd;
+}button:hover{background-color: #4CAF50;animation: zoomIn 0.5s linear reverse;}
+@keyframes zoomIn {from{scale: 1.0;}to{scale: 1.1;}}
+
 footer{
     text-align: center;
     padding: 10px;
@@ -54,31 +64,31 @@ footer{
     color:white;
 }
 
-@media (max-width: 619px) {
-    body {
-        background-color: dimgray;
-        font-size: 14px;
-    }
-
+@media (max-width: 320px) and (max-width: 425px) {
+    
     header{
-        max-width: 74%;
+        max-width: 208px;
     }
 
     nav a {
+        flex-direction: column;
         font-size: 16px;
         padding: 10px;
     }
 
     section{
 
+        max-width: 180px;
         font-size: 16px;
-        width: 70%;
     }
 
-    form, table, footer {
-        width: 75%;
+    form, footer {
+        max-width: 185px;
         padding: 0;
         margin: 10px 0;
-    }footer{padding:2px;width: 72%;}
-
+    }footer{padding:2px;max-width: 215px;}
+    table{
+        max-width: 10px;
+        height: auto;
+    }
 }
