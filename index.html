@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA2 DW</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Encabezado de la pagina-->
+    <header>
+        <h1>Bienvenido a Mi Sitio</h1>
+        <nav>
+                <a href="#about">Sobre Mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+    <!--Esta es la seccion de presentacion-->
+    <main>
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy un desarrollador web.</p>
+        </section>
+        <section id="projects">
+            <h2>Mis Proyectos</h2>
+            <p>He trabajado en sitios responsivos y funcionales.</p>
+        </section>
+    </main>
+    <!--Esta es un pequeño formulario con nombre, email, mensaje-->
+    <form action="/submit" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" name="email" id="email" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="4" placeholder="Tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <!--Una tabla mostrando algunos productos en stock o agotados-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Productos</th>
+                <th>Precios</th>
+                <th>Disponibilidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manzana</td>
+                <td>$1.00</td>
+                <td>En Stock</td>
+            </tr>
+            <tr>
+                <td>Platano</td>
+                <td>$0.50</td>
+                <td>Agotado</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <!--pie de pagina-->
+    <footer>
+        <p>© 2024 - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
